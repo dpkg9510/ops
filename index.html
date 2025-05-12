@@ -1,6 +1,35 @@
 <html>
-  <head><title>Coming Soon!</title></head>
-  <body style="margin:0;">
-    <img src="comingsoon2.png" style="width:100vw;height:100vh;object-fit:cover;">
+  <head>
+    <title>Coming Soon!</title>
+    <style>
+      body {
+        margin: 0;
+      }
+      .desktop {
+        display: block;
+      }
+      .mobile {
+        display: none;
+      }
+
+      @media only screen and (max-width: 768px) {
+        .desktop {
+          display: none;
+        }
+        .mobile {
+          display: block;
+        }
+      }
+
+      img {
+        width: 100vw;
+        height: 100vh;
+        object-fit: cover;
+      }
+    </style>
+  </head>
+  <body>
+    <img class="desktop" src="comingsoon2.png" alt="Coming Soon Desktop">
+    <img class="mobile" src="comingsoon-mobile.png" alt="Coming Soon Mobile">
   </body>
 </html>
